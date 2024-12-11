@@ -1,0 +1,216 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg,#a4eda8, #18e222);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.filtre {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filtre input,
+.filtre select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.filtre select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%204%205%22%3E%3Cpath%20fill%3D%22%234caf50%22%20d%3D%22M2%205L0%203h4z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.filtre input:focus,
+.filtre select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+}
+
+.filtre button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filtre button:hover {
+  background-color: #45a049;
+}
+
+.table {
+  width: 1400px;
+  margin: 30px 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.table th {
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #3e8e41;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.pagination a {
+  padding: 12px 20px;
+  margin: 0 7px;
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.pagination a:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
+}
+
+.pagination .active a {
+  background-color: #2e7d32;
+}
+
+.karakter-detay {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 900px;
+  min-height: 400px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.karakter-detay img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.karakter-detay p {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 5px;
+}
+
+.karakter-detay p:last-of-type {
+  border-bottom: none;
+}
+
+.karakter-detay h2 {
+  font-size: 28px;
+  margin: 15px 0;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.karakter-detay strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.karakter-detay .karakter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.karakter-detay .karakter-info div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #666;
+}
+
+.karakter-detay .karakter-info div span {
+  color: #333;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+
+.container header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 20px;
+  text-align: center;
+}
